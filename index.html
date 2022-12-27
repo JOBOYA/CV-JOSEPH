@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==========Bootstrap=============-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>💻Joseph Boyadjian cv</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Joseph</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link ">
+                            <i class='bx bx-user nav__icon'></i>Profil
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link ">
+                            <i class='bx bx-book nav__icon'></i>Formation
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link ">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link ">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>Experiences
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link ">
+                            <i class='bx bx-award nav__icon'></i>Certificats
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt nav__icon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/portrait.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title">JOSEPH <b>BOYADJIAN</b><br>31ans</br>
+                            </h1>
+                            <h3 class="home__profession">🧑‍🎓 Developpeur Web</h3>
+
+                            <!--========== SOCIAL ==========-->
+
+                            <section class="social section">
+                                <h2 class="section-title">Social</h2>
+
+                                <div class="social__container bd-grid">
+                                    <a href="https://www.linkedin.com/in/joseph-boyadjian-638b83255" target="_blank" class="social__link">
+                                        <i class='bx bxl-linkedin-square social__icon'>Linkedin</i>
+                                    </a>
+
+                                    <a href="https://discord.gg/hovsep#5605" target="_blank" class="social__link">
+                                        <i class='bx bxl-discord-alt social__icon'>Discord</i>
+                                    </a>
+                                    <a href="https://www.facebook.com/Hovsep.boyadjian/" target="_blank" class="social__link">
+                                        <i class='bx bxl-facebook social__icon'>acebook</i>
+                                    </a>
+                                    <a href="https://github.com/JOBOYA" target="_blank" class="social__link">
+                                        <i class='bx bxl-github social__icon'>Github</i>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <!-- Theme change button -->
+                            <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                            <div>
+                                <a download="" href="assets/pdf/myResume.pdf" class="home__button-movil">👉 CV PDF </a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map home__icon'></i><a href="https://goo.gl/maps/CGM6F43LKyvTrb127" target="_blank">165 Chemin de brignon <br />26300 Chateauneuf-sur-isère </a>
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i><a href="mailto:joseph.boyadjian26300@gmail.com" target="_blank" >joseph.boyadjian26300@gmail.com</a>
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i><a href="tel:06.47.07.66.63" target="_blank">06.47.07.66.63</a>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profil</h2>
+
+                    <p class="profile__description">Actuellement en reconversion professionnel. Je suis passioné par le monde de la "tech" depuis mon plus jeune âge, et j'ai appris au fil des années qu'il fallait faire confiance à la technologie..</p>
+                </section>
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Formations</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Graduate Developpeur Front-End</h3>
+                                <span class="education__studies">STUDI, Digital Campus / 2022-2023</span>
+                                <span class="education__year"></span>
+                            </div>
+                        </div>
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Blockchain & Crytpo</h3>
+                                    <span class="education__studies">A distance (CPF) / 2021</span>
+                                </div>
+                            </div>
+
+                            <div class="education__container bd-grid">
+                                <div class="education__content">
+                                    <div class="education__time">
+                                        <span class="education__rounder"></span>
+                                        <span class="education__line"></span>
+                                    </div>
+
+                                    <div class="education__data bd-grid">
+                                        <h3 class="education__title">CACES (1, 3, 5)</h3>
+                                        <span class="education__studies">LEROY MERLIN  / 2021</span>
+                                    </div>
+                                </div>
+
+                                <div class="education__container bd-grid">
+                                    <div class="education__content">
+                                        <div class="education__time">
+                                            <span class="education__rounder"></span>
+                                            <span class="education__line"></span>
+                                        </div>
+
+                                        <div class="education__data bd-grid">
+                                            <h3 class="education__title">CAP CUISINE</h3>
+                                            <span class="education__studies">CFA LUCIEN RAVIT / 2007 - 2009</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="education__container bd-grid">
+                                    <div class="education__content">
+                                        <div class="education__time">
+                                            <span class="education__rounder"></span>
+                                            <span class="education__line"></span>
+                                        </div>
+
+                                        <div class="education__data bd-grid">
+                                            <h3 class="education__title">BEP COMPTA / SECRETARIAT </h3>
+                                            <span class="education__studies">LYCEE MONTPLAISIR / 2006 - 2007</span>
+                                        </div>
+
+                                    </div>
+
+                </section>
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+
+                    <h2 class="section-title">Skills</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> HTLM5
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                </div>
+                            </li>
+
+                            <li class="skills__name"><span class="skills__circle"></span> CSS3
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                </div>
+                            </li>
+
+                            <li class="skills__name"><span class="skills__circle"></span> BOOTSTRAP
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar " role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                </div>
+                            </li>
+
+                            <li class="skills__name"><span class="skills__circle"></span> JAVASCRIPT
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                </div>
+                            </li>
+                            <li class="skills__name"><span class="skills__circle"></span> REACT.JS
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </li>
+
+                            <li class="skills__name"><span class="skills__circle"></span> NODE.JS
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </li>
+
+                            <li class="skills__name"><span class="skills__circle"></span> PHP
+                                <div class="progress" id="bar-progress1">
+                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                </div>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experiences</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">MAGASINIER / CARISTE 👷</h3>
+                                    <span class="experience__description">Leroy Merlin / Dec 2018 - Mai 2022</span>
+                                    <p class="experience__company">Préparation de commandes Web</p>
+                                    <p class="experience__company">Gestion & Planning de la logistique</p>
+                                    <p class="experience__company">Management d'équipe</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">MAÇONNERIE 🏠</h3>
+                                    <span class="experience__description">Sarl Tnc / Jan 2012 - Oct 2018</span>
+                                    <p class="experience__company">Construction de Maisons & Villas</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">COMMIS DE CUISINE 🍳</h3>
+                                    <span class="experience__description">Le Bistrot des Clercs & Michel Chabran /  Juil 2009 - Dec 2011</span>
+                                    <p class="experience__company">Préparation des plats culinaires</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Langues</h2>
+
+                        <div class="languages__container">
+                            <ul class="languages__content bd-grid">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Anglais (50%)
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Arménien (100%)
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificats</h2>
+
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h4 class="certificate__title"> Responsive Web Design</h4>FreeCodeCamp (Août-2022 ⏲️300H)
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Loisirs</h2>
+                        <div class="flex-col">
+                            <div class="flex-row">
+                                <div class="interests__content">
+                                    <p class="interests__icons"> 🎧</p>
+                                    <span class="interests__name">Musique</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <p class="interests__icons">🏃</p>
+                                    <span class="interests__content">Course à pied</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <p class="interests__icons">🎣</p>
+                                    <span class="interests__content">Pêche</span>
+                                </div>
+                            </div>
+
+                            <div class="flex-row">
+                                <div class="interests__content">
+                                    <p class="interests__icons">🚀</p>
+                                    <span class="interests__content">Mining || Gpu</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <p class="interests__icons">🖥️</p>
+                                    <span class="interests__content">Montage Pc</span>
+                                </div>
+
+                                <div class="interests__content">
+                                    <p class="interests__icons">🎮</p>
+                                    <span class="interests__content">Gaming</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bxs-up-arrow-square scrolltop__icon'></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
