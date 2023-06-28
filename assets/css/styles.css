@@ -52,6 +52,7 @@ body.dark-theme{
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
+  transition: .3s;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -624,23 +625,19 @@ img{
 }
 
 
-/***Bar-Progress****/
-#bar-progress1{
-  margin: 10px ;
-  padding-right: 40px;
- 
- 
-}
-
 li .skills__name {
   display: block;
   margin: 10px 0; /* ajoute une marge de 10px en haut et en bas */
   list-style: none;
 }
 
+
 ul .skills__name {
+
   display: flex;
   flex-direction: column; /* aligne les éléments enfants les uns en dessous des autres */
 }
 
 
+
+/*========== MEDIA QUERIES ==========*/

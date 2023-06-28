@@ -4,8 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----===========JSDPF========================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ" crossorigin="anonymous"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+
+
+
+
     <!--==========Bootstrap=============-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!--========== BOX ICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,7 +25,7 @@
     <title>💻Joseph Boyadjian cv</title>
 </head>
 
-<body>
+<body >
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
@@ -29,30 +38,35 @@
                             <i class='bx bx-home nav__icon'></i>Home
                         </a>
                     </li>
+                </ul>
 
                     <li class="nav__item">
                         <a href="#profile" class="nav__link ">
                             <i class='bx bx-user nav__icon'></i>Profil
                         </a>
                     </li>
+                </ul>
 
                     <li class="nav__item">
                         <a href="#education" class="nav__link ">
                             <i class='bx bx-book nav__icon'></i>Formation
                         </a>
                     </li>
+                </ul>
 
                     <li class="nav__item">
                         <a href="#skills" class="nav__link ">
                             <i class='bx bx-receipt nav__icon'></i>Skills
                         </a>
                     </li>
+                </ul>
 
                     <li class="nav__item">
                         <a href="#experience" class="nav__link ">
                             <i class='bx bx-briefcase-alt nav__icon'></i>Experiences
                         </a>
                     </li>
+                </ul>
 
                     <li class="nav__item">
                         <a href="#certificates" class="nav__link ">
@@ -79,9 +93,9 @@
                         <div class="home__data bd-grid">
                             <img src="assets/img/portrait.jpg" alt="" class="home__img">
 
-                            <h1 class="home__title">JOSEPH <b>BOYADJIAN</b><br>31ans</br>
+                            <h1 class="home__title">JOSEPH <b>BOYADJIAN</b><br>32ans</br>
                             </h1>
-                            <h3 class="home__profession">🧑‍🎓 Developpeur Web</h3>
+                            <h3 class="home__profession">👨‍💻 Frontend Developer React | TypeScript</h3>
 
                             <!--========== SOCIAL ==========-->
 
@@ -89,41 +103,49 @@
                                 <h2 class="section-title">Social</h2>
 
                                 <div class="social__container bd-grid">
-                                    <a href="https://www.linkedin.com/in/joseph-boyadjian-638b83255" target="_blank" class="social__link">
+                                    <a href="https://www.linkedin.com/in/joseph-boyadjian-638b83255" target="_blank"
+                                        class="social__link">
                                         <i class='bx bxl-linkedin-square social__icon'>Linkedin</i>
                                     </a>
 
                                     <a href="https://discord.gg/hovsep#5605" target="_blank" class="social__link">
                                         <i class='bx bxl-discord-alt social__icon'>Discord</i>
                                     </a>
-                                    <a href="https://www.facebook.com/Hovsep.boyadjian/" target="_blank" class="social__link">
+                                    <a href="https://www.facebook.com/Hovsep.boyadjian/" target="_blank"
+                                        class="social__link">
                                         <i class='bx bxl-facebook social__icon'>acebook</i>
                                     </a>
                                     <a href="https://github.com/JOBOYA" target="_blank" class="social__link">
                                         <i class='bx bxl-github social__icon'>Github</i>
                                     </a>
                                 </div>
+                                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                                <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
                             </section>
 
                             <!-- Theme change button -->
-                            <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+                         
 
                             <!-- Button to generate and download the pdf. Available for desktop. -->
-                            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                           
                             <div>
-                                <a download="" href="assets/pdf/myResume.pdf" class="home__button-movil">👉 CV PDF </a>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">👉 CV PDF </a>
                             </div>
                         </div>
 
                         <div class="home__address bd-grid">
                             <span class="home__information">
-                                <i class='bx bx-map home__icon'></i><a href="https://goo.gl/maps/CGM6F43LKyvTrb127" target="_blank">165 Chemin de brignon <br />26300 Chateauneuf-sur-isère </a>
+                                <i class='bx bx-map home__icon'></i><a href="https://goo.gl/maps/CGM6F43LKyvTrb127"
+                                    target="_blank">165 Chemin de brignon <br />26300 Chateauneuf-sur-isère </a>
                             </span>
                             <span class="home__information">
-                                <i class='bx bx-envelope home__icon'></i><a href="mailto:joseph.boyadjian26300@gmail.com" target="_blank" >joseph.boyadjian26300@gmail.com</a>
+                                <i class='bx bx-envelope home__icon'></i><a
+                                    href="mailto:joseph.boyadjian26300@gmail.com"
+                                    target="_blank">joseph.boyadjian26300@gmail.com</a>
                             </span>
                             <span class="home__information">
-                                <i class='bx bx-phone home__icon'></i><a href="tel:06.47.07.66.63" target="_blank">06.47.07.66.63</a>
+                                <i class='bx bx-phone home__icon'></i><a href="tel:06.47.07.66.63"
+                                    target="_blank">06.47.07.66.63</a>
                             </span>
                         </div>
                     </div>
@@ -133,7 +155,9 @@
                 <section class="profile section" id="profile">
                     <h2 class="section-title">Profil</h2>
 
-                    <p class="profile__description">Actuellement en reconversion professionnel. Je suis passioné par le monde de la "tech" depuis mon plus jeune âge, et j'ai appris au fil des années qu'il fallait faire confiance à la technologie..</p>
+                    <p class="profile__description">"Je suis passioné de technologies depuis mon plus jeune âge,
+                        j'ai toujours été fasciné par leur evolution et l'impact qu'elles ont sur notre quotidien."
+                    </p>
                 </section>
 
                 <!--========== EDUCATION ==========-->
@@ -148,7 +172,7 @@
                             </div>
 
                             <div class="education__data bd-grid">
-                                <h3 class="education__title">Graduate Developpeur Front-End</h3>
+                                <h3 class="education__title">Développeur FullStack</h3>
                                 <span class="education__studies">STUDI, Digital Campus / 2022-2023</span>
                                 <span class="education__year"></span>
                             </div>
@@ -163,7 +187,7 @@
 
                                 <div class="education__data bd-grid">
                                     <h3 class="education__title">Blockchain & Crytpo</h3>
-                                    <span class="education__studies">A distance (CPF) / 2021</span>
+                                    <span class="education__studies">En distanciel / 2021</span>
                                 </div>
                             </div>
 
@@ -176,7 +200,7 @@
 
                                     <div class="education__data bd-grid">
                                         <h3 class="education__title">CACES (1, 3, 5)</h3>
-                                        <span class="education__studies">LEROY MERLIN  / 2021</span>
+                                        <span class="education__studies">LEROY MERLIN / 2021</span>
                                     </div>
                                 </div>
 
@@ -217,171 +241,199 @@
                     <div class="skills__content bd-grid">
                         <ul class="skills__data">
                             <li class="skills__name">
-                                <span class="skills__circle"></span> HTLM5
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                </div>
+                                <span class="skills__circle"></span><img src="assets/media/icons8-html5.svg" alt="html"
+                                    width="40%">
+                                HTLM5
+
                             </li>
 
-                            <li class="skills__name"><span class="skills__circle"></span> CSS3
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-                                </div>
+                            <li class="skills__name"><span class="skills__circle"></span><img
+                                    src="assets/media/icons8-css3.svg" alt="css" alt="css" width="40%"> CSS3
+
                             </li>
 
-                            <li class="skills__name"><span class="skills__circle"></span> BOOTSTRAP
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar " role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">45%</div>
-                                </div>
+                            <li class="skills__name"><span class="skills__circle"></span> <img
+                                    src="assets/media/icons8-react-native.svg" alt="react" alt="js" width="40%"> REACT
+
                             </li>
 
-                            <li class="skills__name"><span class="skills__circle"></span> JAVASCRIPT
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
-                                </div>
+                            <li class="skills__name"><span class="skills__circle"></span><img
+                                    src="assets/media/icons8-typescript.svg" alt="js" alt="js" width="40%">
+                                TYPESCRIPT
+
                             </li>
-                            <li class="skills__name"><span class="skills__circle"></span> REACT.JS
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                </div>
+                            <li class="skills__name"><span class="skills__circle"></span><img
+                                    src="assets/media/icons8-nodejs.svg" alt="js" alt="js" width="50%">
+
+                                NODE.JS
+
                             </li>
 
-                            <li class="skills__name"><span class="skills__circle"></span> NODE.JS
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                </div>
-                            </li>
 
-                            <li class="skills__name"><span class="skills__circle"></span> PHP
-                                <div class="progress" id="bar-progress1">
-                                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 140px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                </div>
-                            </li>
+
+
                             </li>
                         </ul>
                     </div>
                 </section>
 
+            </div>
+
+          
+
+            <div class="resume__right">
+                <!--========== STAGE  ==========-->
+
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Stage</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Developpeur Web Full Stack</h3>
+                                <span class="experience__description">KOLIVING / JAN 2023 - MARS 2023</span>
+                                <p class="experience__company">Développement et maintenance d’applications Web à l’aide
+                                    de React/TypeScript
+                                    et Nodejs.</p>
+                                <p class="experience__company"> Participer aux revues de code et fournir des
+                                    commentaires constructifs entre développeurs</p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                
+                </section>
+
+
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experiences</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">MAGASINIER / CARISTE 👷</h3>
+                                <span class="experience__description">Leroy Merlin / Dec 2018 - Mai 2022</span>
+                                <p class="experience__company">Préparation de commandes Web</p>
+                                <p class="experience__company">Gestion & Planning de la logistique</p>
+                                <p class="experience__company">Management d'équipe</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">MAÇONNERIE 🏠</h3>
+                                <span class="experience__description">Sarl Tnc / Jan 2012 - Oct 2018</span>
+                                <p class="experience__company">Construction de Maisons & Villas</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">COMMIS DE CUISINE 🍳</h3>
+                                <span class="experience__description">Le Bistrot des Clercs & Michel Chabran / Juil 2009
+                                    - Dec 2011</span>
+                                <p class="experience__company">Préparation des plats culinaires</p>
+                            </div>
+                        </div>
+
                 </div>
+                </section>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        <h2 class="section-title">Experiences</h2>
 
-                        <div class="experience__container bd-grid">
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
 
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">MAGASINIER / CARISTE 👷</h3>
-                                    <span class="experience__description">Leroy Merlin / Dec 2018 - Mai 2022</span>
-                                    <p class="experience__company">Préparation de commandes Web</p>
-                                    <p class="experience__company">Gestion & Planning de la logistique</p>
-                                    <p class="experience__company">Management d'équipe</p>
-                                </div>
-                            </div>
 
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Langues</h2>
 
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">MAÇONNERIE 🏠</h3>
-                                    <span class="experience__description">Sarl Tnc / Jan 2012 - Oct 2018</span>
-                                    <p class="experience__company">Construction de Maisons & Villas</p>
-                                </div>
-                            </div>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Anglais (50%)
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Arménien
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Certificats</h2>
 
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">COMMIS DE CUISINE 🍳</h3>
-                                    <span class="experience__description">Le Bistrot des Clercs & Michel Chabran /  Juil 2009 - Dec 2011</span>
-                                    <p class="experience__company">Préparation des plats culinaires</p>
-                                </div>
-                            </div>
-
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h4 class="certificate__title"> Responsive Web Design</h4>FreeCodeCamp (Août-2022 ⏲️300H)
                         </div>
-                    </section>
+                    </div>
+                </section>
 
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        <h2 class="section-title">Langues</h2>
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Loisirs</h2>
+                    <div class="flex-col">
+                        <div class="flex-row">
+                            <div class="interests__content">
+                                <p class="interests__icons"> 🎧</p>
+                                <span class="interests__name">Musique</span>
+                            </div>
 
-                        <div class="languages__container">
-                            <ul class="languages__content bd-grid">
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span> Anglais (50%)
-                                </li>
-                                <li class="languages__name">
-                                    <span class="languages__circle"></span> Arménien (100%)
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
+                            <div class="interests__content">
+                                <p class="interests__icons">🏃</p>
+                                <span class="interests__content">Course à pied</span>
+                            </div>
 
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificats</h2>
-
-                        <div class="certificate__container bd-grid">
-                            <div class="certificate__content">
-                                <h4 class="certificate__title"> Responsive Web Design</h4>FreeCodeCamp (Août-2022 ⏲️300H)
+                            <div class="interests__content">
+                                <p class="interests__icons">🎣</p>
+                                <span class="interests__content">Pêche</span>
                             </div>
                         </div>
-                    </section>
 
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        <h2 class="section-title">Loisirs</h2>
-                        <div class="flex-col">
-                            <div class="flex-row">
-                                <div class="interests__content">
-                                    <p class="interests__icons"> 🎧</p>
-                                    <span class="interests__name">Musique</span>
-                                </div>
-
-                                <div class="interests__content">
-                                    <p class="interests__icons">🏃</p>
-                                    <span class="interests__content">Course à pied</span>
-                                </div>
-
-                                <div class="interests__content">
-                                    <p class="interests__icons">🎣</p>
-                                    <span class="interests__content">Pêche</span>
-                                </div>
+                        <div class="flex-row">
+                            <div class="interests__content">
+                                <p class="interests__icons">🚀</p>
+                                <span class="interests__content">Mining || Gpu</span>
                             </div>
 
-                            <div class="flex-row">
-                                <div class="interests__content">
-                                    <p class="interests__icons">🚀</p>
-                                    <span class="interests__content">Mining || Gpu</span>
-                                </div>
+                            <div class="interests__content">
+                                <p class="interests__icons">🖥️</p>
+                                <span class="interests__content">Montage Pc</span>
+                            </div>
 
-                                <div class="interests__content">
-                                    <p class="interests__icons">🖥️</p>
-                                    <span class="interests__content">Montage Pc</span>
-                                </div>
-
-                                <div class="interests__content">
-                                    <p class="interests__icons">🎮</p>
-                                    <span class="interests__content">Gaming</span>
-                                </div>
+                            <div class="interests__content">
+                                <p class="interests__icons">🎮</p>
+                                <span class="interests__content">Gaming</span>
                             </div>
                         </div>
-                    </section>
-                </div>
-                </div>
+                    </div>
+                </section>
+            </div>
+        
     </main>
 
     <!--========== SCROLL TOP ==========-->

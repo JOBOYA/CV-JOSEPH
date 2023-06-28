@@ -1,3 +1,4 @@
+
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -93,37 +94,25 @@ function removeScale() {
 }
 
 /*==================== GENERATE PDF ====================*/ 
-// PDF generated area
+
 let areaCv = document.getElementById('area-cv')
-
-let resumeButton = document.getElementById('resume-button')
-
-// Html2pdf options
-
-
-// Function to call areaCv and Html2Pdf options 
+let resumeButton = document.getElementById('resume-button');
 
 let opt = {
     margin:       0,
     filename:     'myResume.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 4, width: 968, height: 1835.5 },
-    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
-  };
-// When the button is clicked, it executes the three functions
+    html2canvas:  { scale: 1 },
+    jsPDF:        { format: 'a4', orientation: 'portrait' },
+};
+
 function generateResume(){
     html2pdf(areaCv, opt)
 }
 
-
-resumeButton.addEventListener('click', () =>{
-// 1. The class .scale-cv is added to the body, where it reduces the size of the elements
+resumeButton.addEventListener('click', () => {
     scaleCv()
 
+    generateResume()
 
-    // 2. The PDF is generated
-generateResume()
-
-    // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
-    setTimeout(removeScale, 5000)
 })
