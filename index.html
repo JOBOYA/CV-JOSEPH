@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----===========JSDPF========================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ" crossorigin="anonymous"></script>
+    
+<script src="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="></script>
 <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+
+
+
 
 
 
@@ -38,35 +44,35 @@
                             <i class='bx bx-home nav__icon'></i>Home
                         </a>
                     </li>
-                </ul>
+                
 
                     <li class="nav__item">
                         <a href="#profile" class="nav__link ">
                             <i class='bx bx-user nav__icon'></i>Profil
                         </a>
                     </li>
-                </ul>
+                
 
                     <li class="nav__item">
                         <a href="#education" class="nav__link ">
                             <i class='bx bx-book nav__icon'></i>Formation
                         </a>
                     </li>
-                </ul>
+                
 
                     <li class="nav__item">
                         <a href="#skills" class="nav__link ">
                             <i class='bx bx-receipt nav__icon'></i>Skills
                         </a>
                     </li>
-                </ul>
+                
 
                     <li class="nav__item">
                         <a href="#experience" class="nav__link ">
                             <i class='bx bx-briefcase-alt nav__icon'></i>Experiences
                         </a>
                     </li>
-                </ul>
+                
 
                     <li class="nav__item">
                         <a href="#certificates" class="nav__link ">
@@ -119,7 +125,7 @@
                                         <i class='bx bxl-github social__icon'>Github</i>
                                     </a>
                                 </div>
-                                <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                                <i class='bx bx-download generate-pdf'  href="/assets/pdf/CV_JOSEPH.pdf" title="Generate PDF" download id="resume-button"></i>
                                 <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
                             </section>
 
@@ -129,7 +135,7 @@
                             <!-- Button to generate and download the pdf. Available for desktop. -->
                            
                             <div>
-                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">👉 CV PDF </a>
+                                <a download="" href="/assets/pdf/CV_JOSEPH.pdf" class="home__button-movil">👉 CV PDF </a>
                             </div>
                         </div>
 
@@ -379,6 +385,17 @@
                                 <span class="languages__circle"></span> Arménien
                             </li>
                         </ul>
+                    </div>
+                </section>
+
+                <!--========== Diplôme ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Diplôme</h2>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h4 class="certificate__title"> Titre Professionnel | Développeur Web et Mobile - Certifié RNCP Niveau 5 </h4>
+                        </div>
                     </div>
                 </section>
 
